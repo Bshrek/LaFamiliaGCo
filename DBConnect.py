@@ -15,7 +15,7 @@ import pyodbc
 
 try:
     #Get Access file ###
-    con_string = r'DRIVER={Microsoft Access Driver (*.mdb, *.accdb)};DBQ=C:\Users\bshre\OneDrive\Desktop\Bot\Main\La Familia DB.accdb;'
+    con_string = r'DRIVER={Microsoft Access Driver (*.mdb, *.accdb)};DBQ=La Familia DB.accdb;'
     #File Connection
     conn = pyodbc.connect(con_string)
     #create cursor to fetch Data

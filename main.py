@@ -1,6 +1,5 @@
 #main commands
 
-from asyncio.windows_events import NULL
 from cgitb import text
 from datetime import date, datetime
 from email import message

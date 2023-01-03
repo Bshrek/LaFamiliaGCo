@@ -10,7 +10,7 @@ from operator import index
 from os import stat
 from random import Random, random
 from sqlite3 import Date
-from sre_parse import State
+#from sre_parse import State
 import time ,sched
 from tkinter import Button
 from typing import Awaitable

@@ -10,7 +10,7 @@ import logging
 from operator import index
 from os import stat
 from random import Random, random
-from sre_parse import State
+#from sre_parse import State
 import time
 from tkinter import Button
 from typing import Awaitable

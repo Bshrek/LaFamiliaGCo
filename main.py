@@ -1,9 +1,17 @@
 #main commands
 
-import inspect, os
-print (inspect.getfile(inspect.currentframe())) # script filename (usually with path)
-print (os.path.dirname(os.path.abspath(inspect.getfile(inspect.currentframe())))) # script directory
+import os
 
+def list_files(startpath):
+    for root, dirs, files in os.walk(startpath):
+        level = root.replace(startpath, '').count(os.sep)
+        indent = ' ' * 4 * (level)
+        print('{}{}/'.format(indent, os.path.basename(root)))
+        subindent = ' ' * 4 * (level + 1)
+        for f in files:
+            print('{}{}'.format(subindent, f))
+           
+list_files('/opt/render/project/src')
 
 from cgitb import text
 from datetime import date, datetime

@@ -11,7 +11,7 @@ def list_files(startpath):
         for f in files:
             print('{}{}'.format(subindent, f))
            
-list_files('/opt/render/project/src')
+list_files('')
 
 from cgitb import text
 from datetime import date, datetime

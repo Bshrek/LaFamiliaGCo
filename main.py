@@ -1,5 +1,9 @@
 #main commands
 
+import os
+print('Get current working directory : ', os.getcwd())
+
+
 from cgitb import text
 from datetime import date, datetime
 from email import message

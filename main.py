@@ -1,8 +1,8 @@
 #main commands
 
-file1 = open("/opt/render/project/src/requirements.txt","r")
-file2 = file1.read()
-print(file2)
+import pyodbc
+print(pyodbc.drivers())
+
 
 from cgitb import text
 from datetime import date, datetime

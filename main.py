@@ -1,6 +1,7 @@
 #main commands
 
-file1 = open("requirements.txt","w")
+file1 = open("requirements.txt","r")
+print(file1)
 
 from cgitb import text
 from datetime import date, datetime

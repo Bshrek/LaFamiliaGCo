@@ -16,7 +16,7 @@ import pyodbc
 try:
     #Get Access file ### ODBC Driver 13 for SQL Server
     #con_string = r'DRIVER={Microsoft Access Driver (*.mdb, *.accdb)};DBQ=opt/render/project/src/laFamiliaDB.accdb;'
-    con_string = r'DRIVER={ODBC Driver 13 for SQL Server (*.mdb, *.accdb)};DBQ=opt/render/project/src/laFamiliaDB.accdb;'
+    con_string = r'DRIVER={/usr/local/lib/libmsodbcsql.13.dylib}; (*.mdb, *.accdb)};DBQ=opt/render/project/src/laFamiliaDB.accdb;'
     #File Connection
     conn = pyodbc.connect(con_string)
     #create cursor to fetch Data

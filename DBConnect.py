@@ -14,8 +14,9 @@ from xmlrpc.client import Boolean
 import pyodbc
 
 try:
-    #Get Access file ###
-    con_string = r'DRIVER={Microsoft Access Driver (*.mdb, *.accdb)};DBQ=opt/render/project/src/laFamiliaDB.accdb;'
+    #Get Access file ### ODBC Driver 13 for SQL Server
+    #con_string = r'DRIVER={Microsoft Access Driver (*.mdb, *.accdb)};DBQ=opt/render/project/src/laFamiliaDB.accdb;'
+    con_string = r'DRIVER={ODBC Driver 13 for SQL Server (*.mdb, *.accdb)};DBQ=opt/render/project/src/laFamiliaDB.accdb;'
     #File Connection
     conn = pyodbc.connect(con_string)
     #create cursor to fetch Data

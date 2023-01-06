@@ -1,6 +1,6 @@
 #main commands
 
-file1 = open("requirements.txt","r")
+file1 = open("/opt/render/project/src/requirements.txt","r")
 file2 = file1.read()
 print(file2)
 

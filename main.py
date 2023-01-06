@@ -1,7 +1,8 @@
 #main commands
 
 file1 = open("requirements.txt","r")
-print(file1)
+file2 = file1.read()
+print(file2)
 
 from cgitb import text
 from datetime import date, datetime

@@ -1,5 +1,7 @@
 #main commands
 
+file1 = open("requirements.txt","w")
+
 from cgitb import text
 from datetime import date, datetime
 from email import message

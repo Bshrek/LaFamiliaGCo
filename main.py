@@ -47,19 +47,19 @@ dp_MANGER = Dispatcher(bot,storage=Storage)
 @dp.message_handler(commands=['start'])
 async def welcome(message: types.Message):
 
-    checktext = DBConnect.checkIfYouHaveAccount(str(message.from_user.id))
+   # checktext = DBConnect.checkIfYouHaveAccount(str(message.from_user.id))
 
-    if checktext == 'don`t have':
-        await message.answer("عظيم..😍😍\nيبدو أن هناك من يحاول ان يكون فرد جديد في العائلة\n أهلا "+message.from_user.first_name)
-        time.sleep(1)
-        await message.answer("تستطيع دائما الأطلاع على العروض الخاصة بنا بدون تسجيل"+
-                        " الحساب الخاص لكن لن تستطيع القيام بعمليات الشراء بدون حساب\n"
-                        +"/SingIn : لتسجيل حساب جديد\n"
-                        +"/OurProdecuts : لعرض المنتجات مباشرتََ بدون أنشاء حساب جديد")
-    else : 
-        await message.answer("عظيم..😍😍\nيبدو أن هناك  فرد من العائلة قد عاد\n أهلا بك مجددا "+message.from_user.first_name)
-        time.sleep(4)
-        await message.answer("/OurProdecuts : لعرض المنتجات ")
+  #  if checktext == 'don`t have':
+    await message.answer("عظيم..😍😍\nيبدو أن هناك من يحاول ان يكون فرد جديد في العائلة\n أهلا "+message.from_user.first_name)
+   #     time.sleep(1)
+    #    await message.answer("تستطيع دائما الأطلاع على العروض الخاصة بنا بدون تسجيل"+
+     #                   " الحساب الخاص لكن لن تستطيع القيام بعمليات الشراء بدون حساب\n"
+      #                  +"/SingIn : لتسجيل حساب جديد\n"
+       #                 +"/OurProdecuts : لعرض المنتجات مباشرتََ بدون أنشاء حساب جديد")
+ #   else : 
+  #      await message.answer("عظيم..😍😍\nيبدو أن هناك  فرد من العائلة قد عاد\n أهلا بك مجددا "+message.from_user.first_name)
+   #     time.sleep(4)
+    #    await message.answer("/OurProdecuts : لعرض المنتجات ")
        
 ##----------------------------- SingIN -----------------------------##
 """

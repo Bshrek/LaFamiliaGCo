@@ -1,8 +1,5 @@
 #main commands
 
-import pyodbc
-print(pyodbc.drivers())
-
 
 from cgitb import text
 from datetime import date, datetime
@@ -26,8 +23,8 @@ from aiogram.dispatcher.filters.state import State, StatesGroup
 from aiogram.types import ReplyKeyboardMarkup, ReplyKeyboardRemove, KeyboardButton, InlineKeyboardButton,InlineKeyboardMarkup
 from decouple import config
 #################
-import DBConnect 
-import MangmentBot
+##import DBConnect 
+##import MangmentBot
 
 BOT_TOKEN = config('BOT_TOKEN')
 
@@ -65,7 +62,7 @@ async def welcome(message: types.Message):
         await message.answer("/OurProdecuts : لعرض المنتجات ")
        
 ##----------------------------- SingIN -----------------------------##
-
+"""
 class SingUPClass(StatesGroup):
     FirstName = State()
     LastName = State()
@@ -456,7 +453,7 @@ def loopRoom(target:str):
             listLoc.append(str(row[1]))
             
     s.enter(0.5, 1, loopRoom, (s,))
-
+"""
 
 if __name__ == '__main__':
     executor.start_polling(dp)

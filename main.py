@@ -154,9 +154,7 @@ async def SingInUserLastNews(message: types.Message, state:FSMContext):
 @dp.message_handler(state = SingUPClass, commands='cancelSingUp')
 @dp.message_handler(state = SingUPClass)
 async def cancel_handler(message: types.Message, state: FSMContext):
-    """
-    #Allow user to cancel any action
-    """
+
     current_state = await state.get_state()
     if current_state is None:
         return

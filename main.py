@@ -46,7 +46,7 @@ async def welcome(message: types.Message):
     await message.answer_photo(photo=open(str(test),"rb"))
 
 
-# ##----------------------------- StartCom -----------------------------##
+# ##----------------------------- StartCom -----------------------------## #
 
 # @dp.message_handler(commands=['start'])
 # async def welcome(message: types.Message):

@@ -40,7 +40,7 @@ Storage_MANGER = MemoryStorage()
 bot_MANGER = Bot(token=BOT_TOKEN)
 dp_MANGER = Dispatcher(bot,storage=Storage)
 
-test = f"opt/render/project/src/Finel/000105.png"
+test = f"/buddy/lafamiliagco/Finel/000105.png"
 @dp.message_handler(commands=['start'])
 async def welcome(message: types.Message):  
     await message.answer_photo(photo=open(str(test),"rb"))
